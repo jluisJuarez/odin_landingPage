@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Landing Page</title>
+</head>
+<body>
+  
+<header > 
+	<a href="index.html"><img id="logo" src="img/logo_ico.png" alt="logo" /></a>
+	<nav>
+		<a class="nav" href="index.html">Inicio</a>
+		<a class="nav" href="acerca.html">Acerca de</a>
+		<a class="nav" id="active" href="reservar.html">Reservar</a>
+	</nav>
+</header>
+<section id="hero-reservar">
+    <div>   
+		<h1 id="hero-title">PATAGONIA</h1>
+		<p id="hero-text"><q>Una travesía entre glaciares y montes colosales hasta el extremo sur del continente americano.</q></p>
+        <button class="btn-reservar"><a href="reservar.html#reservar">Reservar ahora</a></button>
+    </div>
+</section>
+
+<section id="reservar">
+    <h2 id="info-title">RESERVACIONES</h2>
+    <section class="form">
+	
+		<fieldset id="form">
+			<legend>Configura el Tour</legend>
+			
+			<label><b>Origen:</b></label><br>
+			<input type="text" placeholder="¿De dónde viajas?" required<br><br>
+			
+			<label><b>Destino:</b></label><br>
+			<select required>
+				
+				<option>
+				<option value="glaciares">Parque Nacional de los Glaciares</option>
+				<option value="calafate">El Calafate</option>
+				<option value="monte">Monte Fitz Roy</option>
+				<option value="hielos">Hielos Australes</option>
+				<option value="faro">Faro Les Éclaireurs en Ushuaia</option>
+				<option value="beagle">Canal de Beagle</option>
+				<option value="perito">Perito Moreno</option>
+				<option value="tierra">Parque Nacional Tierra de Fuego</option>
+			</select><br><br>
+			
+			<label><b>Fecha:</b></label><br>
+			<input type="date" required><br><br>
+			
+			<label><b>Personas:</b></label><br>
+			<input type="number" required><br><br>
+			
+			<label><b>Arma tu paquete:</b></label><br>
+			
+			<input type="checkbox">
+			<label>Avión</label>
+			<input type="radio" value="ida" name="gender">Sólo ida
+			<input type="radio" value="vuelta" name="gender">Viaje redondo<br>
+			<input type="checkbox">
+			<label>Hospedaje</label><br>
+			<input type="checkbox">
+			<label>Alimentos</label><br>
+			<input type="checkbox">
+			<label>Transporte</label><br>
+			<input type="checkbox">
+			<label>Tour</label><br><br>
+			
+			<label><b>Nombre(s):</b></label>
+			<input type="text" placeholder="Escribe tu nombre">
+			<label><b>Apellidos:</b></label>
+			<input type="text" placeholder="Escribe tus apellidos" required><br><br>
+			
+			<label><b>Correo electrónico:</b></label>
+			<input type="email" placeholder="Escribe tu correo" required><br><br>
+			
+			<label><b>Número de teléfono</b></label>
+			<input type="tel" placeholder="(+52) 12-34-56-78-90" pattern="[0-9]{+2}-[0-9]{2}-[0-9]{2}-[0-9]{2}-[0-9]{2}-[0-9]{2}" required><br>
+			<small>Formato: (+52) 12-34-56-78-90</small><br><br>
+			
+			<input class="btn-form" type="submit" value="Enviar"><br><br>
+				
+		</fieldset>
+	</section>
+    </section>
+    <section id="testimonios">
+    <figure >
+		<img id="panel" src="img/maravilla_2.jpg" alt="Flora sorprendente"/>
+		<img id="panel" src="img/maravilla_3.jpg" alt="Flora parque nacional"/>
+		<img id="panel" src="img/patagonia_2.jpg" alt="Flora en las montañas"/>
+		<img id="panel" src="img/historia_1.jpg" alt="Glaciares"/>
+        <figcaption>Patagonia | Paisajes</figcaption>
+	</figure>	
+    </section>
+   
+    <footer>
+        <p>Copyright &copy; Dejando Huella 2026</p>
+    </footer>   
+</body>
+</html>

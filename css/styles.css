@@ -1,0 +1,318 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+header {
+    background-color: #1f2937;
+    padding: 8px 100px;
+    text-align: center;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#logo {
+    width: 70px;
+}
+
+header nav {
+    display: flex;
+    gap: 20px;
+    align-items: end;
+}
+
+.nav, .btn-reservar a {
+    color: #f9faf8;
+    text-decoration: none;
+}
+
+.nav:hover {
+    border-bottom: 2px solid #f9faf8;
+}
+
+#active {
+    border-bottom: 2px solid #f9faf8;
+}
+
+#hero {
+    background-color: #1f2937;
+    background-size: cover;
+    height: 60vh;
+    padding: 20px 100px;
+    display: flex;
+    text-align: left;
+    align-items: center;
+}
+
+#hero-img {
+    margin: auto;
+    width: 605px;
+    height: 386px;
+}
+
+#hero-title {
+    color: #f9faf8;
+    font-size: 48px;
+    font-weight: 900;
+}
+
+#hero-text {
+    color: #e5e7eb;
+    font-size: 18px;
+    margin-top: 0px;
+    padding-right: 30px;
+}
+
+#hero-logo-text {
+    width: 24px;
+    color: #f9faf8;
+    margin-top: 20px;
+}
+
+.btn-reservar {
+    background-color: #3882f6;
+    color: #fff;
+    text-decoration: none;
+    border: none;
+    border-radius: 12px;
+    padding: 10px 20px;
+    font-size: 18px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+#info-title {
+    display: block;
+    margin: 40px auto 0px auto;
+    font-size: 36px;
+    font-weight: 900;
+    color: #1f2937;
+    text-align: center;
+}
+
+#info {
+    margin: 10px;
+    padding: 10px 100px;
+    display: flex;
+    gap: 10px;
+}
+
+.info-lugar {
+    padding: 20px;
+    text-align: center;
+    flex: 1;
+}
+
+.info-lugar img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 12px;
+    border: #3882f6 solid 3px;
+}
+
+#testimonios {
+    background-color: #e5e7eb;
+    color: #1f2937;
+    padding: 100px 250px;
+}
+#testimonios-text {
+    font-size: 36px;
+    font-weight: 300;
+    text-align: left;
+}
+
+#testimonios-title {
+    font-size: 16px;
+    font-weight: 900;
+    margin: 20px 20px 0px auto;
+    text-align: right;
+}
+
+#cta {
+    display: flex;
+    align-items: center;
+    margin: 100px 200px;
+    padding: 80px 100px;
+    text-align: left;
+    border: none;
+    background-color: #3882f6;
+    border-radius: 12px;
+}
+
+#cta-title {
+    font-size: 24px;
+    font-weight: 900;
+    color: #f9faf8;
+}
+
+#cta-text {
+    font-size: 18px;
+    font-weight: 300;
+    
+    color:#f9faf8;
+}
+
+.btn-reservar-cta {
+    background-color: #3882f6;
+    border: 2px solid #f9faf8;
+    border-radius: 12px;
+    font-size: 18px;
+    cursor: pointer;
+    width: 200px;
+    height: 50px;
+}
+
+.btn-reservar-cta a {
+    color: #fff;
+    text-decoration: none;
+}
+
+footer {
+    background-color: #1f2937;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    width: 100%;
+    bottom: 0;
+
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+}
+
+/* Acerca de */
+
+#hero-acerca {
+    background-image: url("../img/maravilla_5.jpg");
+    background-repeat: no-repeat;            
+    background-attachment: inherit;
+    background-size: cover;
+    background-position: bottom;
+    background-color: rgba(31, 41, 55, 0.4);
+    background-blend-mode: darken;
+    height: 60vh;
+    padding: 20px 100px;
+    display: flex;
+    text-align: left;
+    align-items: center;
+    text-shadow: 3px 1px 1px #000;
+}
+
+.info-acerca {
+    margin: 10px auto;
+    padding: 10px 200px;
+    display: block;
+}
+
+.info-lugar-acerca {
+    display: flex;
+    padding: 20px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.img-acerca {
+    width: 300px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 12px;
+    border: #3882f6 solid 3px;
+    margin-right: 20px;
+}
+
+.info-text-acerca {
+    display: block;
+    text-align: left;
+}
+
+.info-text-acerca h3 {
+    font-size: 24px;
+    font-weight: 900;
+    color: #1f2937;
+    margin: 0 15px;
+}
+
+.acerca-texto {
+    margin: 15px;
+    font-size: 18px;
+    color: #1f2937;
+}
+
+figure {
+    padding: 30px 10px 30px 10px;
+	margin: auto;
+	display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 5px;
+}
+
+figure img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+/* Reservación */
+
+#hero-reservar {
+    background-image: url("../img/fuentes_1.jpg");
+    background-repeat: no-repeat;            
+    background-attachment: inherit;
+    background-size: cover;
+    background-position: top;
+    background-color: rgba(31, 41, 55, 0.4);
+    background-blend-mode: darken;
+    height: 60vh;
+    padding: 20px 100px;
+    display: flex;
+    text-align: left;
+    align-items: center;
+    text-shadow: 3px 1px 1px #000;
+}
+
+#reservar {
+    background-image: url("../img/patagonia_3.jpg");
+    background-repeat: no-repeat;            
+    background-attachment: inherit;
+    background-size: cover;
+    background-position: top;
+    background-color: rgba(31, 41, 55, 0.6);
+    background-blend-mode: darken;
+    margin: 0 auto;
+    padding: 10px 200px;
+    display: block;
+}
+
+.form {
+	margin: 30px auto;
+	width: 580px;
+    
+ }
+ 
+ #form {
+	color: white;
+	padding: 10px 30px 0px 50px;
+ }
+
+ legend {
+    font-size: 24px;
+    font-weight: 700;
+    color: #f9faf8;
+    margin: 20px auto;
+    padding: 0 10px;
+}
+ 
+ .btn-form {
+	cursor: pointer;
+    background-color: rgba(249, 250, 248, 0.8);
+    border: 2px solid #f9faf8;
+    border-radius: 8px;
+    font-size: 18px;
+    cursor: pointer;
+    width: 100%;
+    height: 40px;
+ }
